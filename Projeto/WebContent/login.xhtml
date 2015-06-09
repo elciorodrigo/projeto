@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:body>
+	<ui:decorate template="index.xhtml">
+		<ui:define name="conteudo">
+		<div align="center"> 
+			<h:form>
+
+				<h:panelGrid columns="2">
+ 
+					<h:outputLabel for="user">Usuario:</h:outputLabel>
+					<h:inputText id="user" value="#{CadastrarBean.user}" />
+					
+					<h:outputLabel for="pass">Senha:</h:outputLabel>
+					<h:inputText id="pass" value="#{CadastrarBean.pass}" />
+					
+
+				</h:panelGrid>
+				
+			
+			
+				<p:commandButton value="Entrar" action="#{CadastrarBean.logar}"/>	
+				
+
+				<!-- <h:commandButton value="Logout" acion="" /> -->
+				<!-- 	<h:outputText rendered="#{CadastrarBean.ok == true}" value="Sim" />   --> 
+			</h:form>
+			</div> 	
+		</ui:define>
+	</ui:decorate>
+
+</h:body>
+
+
+
+</html>

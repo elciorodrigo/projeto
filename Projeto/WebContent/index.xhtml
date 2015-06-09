@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" />
+	<meta http-equiv="Content-Type" content="text/css; charset=ISO-8859-1" />
+	<title>Controle Financeiro</title>
+</h:head>
+
+<p:layout fullPage="true" styleClass="ui-panel-content">
+	<p:layoutUnit position="north">
+		<p:panel id="painelMenu" styleClass="ui-panel-content" >
+			<!--  <h:panelGrid columns="1"> --> 
+				
+				<h2 id="titulo" align="center">Controle Financeiro</h2>
+		<!--	</h:panelGrid> --> 
+			
+				<h:form >
+					<p:menubar >
+					
+						<p:menuitem value="Login" icon="ui-icon-home" ajax="true"  url="login.xhtml"/>
+						<p:menuitem value="Cadastrar" icon="ui-icon-home" ajax="true"  url="cadastrar.xhtml"/>
+					</p:menubar>
+				</h:form>
+		
+		</p:panel>
+	</p:layoutUnit>
+
+	<p:layoutUnit position="center" styleClass="ui-panel-content">
+		<ui:insert name="conteudo">
+			<p:panel styleClass="ui-panel-content">
+				<p:panelGrid columns="2">
+				</p:panelGrid>
+			</p:panel>
+		</ui:insert>
+
+	</p:layoutUnit>
+
+</p:layout>
+
+
+</html>
